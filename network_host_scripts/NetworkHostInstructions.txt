@@ -1,4 +1,5 @@
 Comments are made via start_host.sh about specifics for what is running when the file is run.
+This allows for an internal network, not connected to the internet.
 However, to start the raspberry pi network using this host network, do the following:
 1. Have sudo access
 2. Download the git repository
