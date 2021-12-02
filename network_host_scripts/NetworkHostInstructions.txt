@@ -1,0 +1,6 @@
+Comments are made via start_host.sh about specifics for what is running when the file is run.
+However, to start the raspberry pi network using this host network, do the following:
+1. Have sudo access
+2. Download the git repository
+3. Run 'sudo chmod u+x ./start_host.sh'
+4. Run 'sudo ./start_host.sh'
