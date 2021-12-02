@@ -11,8 +11,8 @@
 sudo apt install hostapd
 sudo apt install dnsmasq
 
-chmod u+x ./host_network_init.sh
-chmod u+x ./start_network.sh
-chmod u+x ./stop_network.sh
+sudo chmod u+x ./host_network_init.sh
+sudo chmod u+x ./start_network.sh
+sudo chmod u+x ./stop_network.sh
 
 sudo ./host_network_init.sh
