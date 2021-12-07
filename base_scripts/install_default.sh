@@ -8,3 +8,12 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install default-jdk
+
+sudo apt install network-manager
+sudo nmcli radio wifi off
+sudo rm -f /etc/wpa_supplicant/wpa_supplicant.conf
+sudo echo -e '\nctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\ncountry=US' >> /etc/wpa_supplicant/wpa_supplicant.conf
+sudo echo -e 'network={\nssid="RedwoodCSNetwork"\npsk="RedwoodRHSNetworkPassword"\nkey_mgmt=WPA-PSK\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf
+sudo nmcli radio wifi on
+
+
